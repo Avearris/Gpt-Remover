@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "GPT remover",
+  "version": "1.0",
+  "description": "Removes utm_source parameters that contain chatgpt",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_title": "UTM Cleaner"
+  },
+  "icons": {
+    "512": "icon.png"
+  }
+}
